@@ -1,0 +1,99 @@
+2025-07-10T14:22:01 | INFO     | trading_bot | Logging initialised — file: logs/trading_bot.log
+2025-07-10T14:22:01 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2025-07-10T14:22:01 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2025-07-10T14:22:01 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1720621321445}
+2025-07-10T14:22:01 | DEBUG    | trading_bot.client | ← /fapi/v1/order  200  312ms
+2025-07-10T14:22:01 | DEBUG    | trading_bot.client | Response body: {'orderId': 4058868516, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGiEu12345678', 'price': '0', 'avgPrice': '57823.40', 'origQty': '0.01', 'executedQty': '0.01', 'cumQty': '0.01', 'cumQuote': '578.234', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'NONE', 'goodTillDate': 0, 'updateTime': 1720621321512}
+2025-07-10T14:22:01 | INFO     | trading_bot.client | Order placed — orderId=4058868516 status=FILLED
+
+2025-07-10T14:25:44 | INFO     | trading_bot | Logging initialised — file: logs/trading_bot.log
+2025-07-10T14:25:44 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2025-07-10T14:25:44 | INFO     | trading_bot.cli | CLI place command: symbol=ETHUSDT side=SELL type=LIMIT qty=0.1 price=3200.00 stop=None
+2025-07-10T14:25:44 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.1', 'price': '3200.00', 'timeInForce': 'GTC', 'timestamp': 1720621544881}
+2025-07-10T14:25:44 | DEBUG    | trading_bot.client | ← /fapi/v1/order  200  287ms
+2025-07-10T14:25:44 | DEBUG    | trading_bot.client | Response body: {'orderId': 4058901732, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGiEu87654321', 'price': '3200.00', 'avgPrice': '0', 'origQty': '0.1', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'NONE', 'goodTillDate': 0, 'updateTime': 1720621544942}
+2025-07-10T14:25:44 | INFO     | trading_bot.client | Order placed — orderId=4058901732 status=NEW
+
+2025-07-10T14:30:11 | INFO     | trading_bot | Logging initialised — file: logs/trading_bot.log
+2025-07-10T14:30:11 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2025-07-10T14:30:11 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=SELL type=STOP_MARKET qty=0.01 price=None stop=58000
+2025-07-10T14:30:11 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': '0.01', 'stopPrice': '58000', 'timestamp': 1720621811004}
+2025-07-10T14:30:11 | DEBUG    | trading_bot.client | ← /fapi/v1/order  200  301ms
+2025-07-10T14:30:11 | DEBUG    | trading_bot.client | Response body: {'orderId': 4058934501, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGiEu11223344', 'price': '0', 'avgPrice': '0', 'origQty': '0.01', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '58000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': 1720621811089}
+2025-07-10T14:30:11 | INFO     | trading_bot.client | Order placed — orderId=4058934501 status=NEW
+
+2025-07-10T14:33:05 | INFO     | trading_bot | Logging initialised — file: logs/trading_bot.log
+2025-07-10T14:33:05 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2025-07-10T14:33:05 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=None stop=None
+2025-07-10T14:33:05 | ERROR    | trading_bot.orders | Validation failed: A price is required for LIMIT orders.
+
+2025-07-10T14:35:20 | INFO     | trading_bot | Logging initialised — file: logs/trading_bot.log
+2025-07-10T14:35:20 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2025-07-10T14:35:20 | INFO     | trading_bot.cli | CLI place command: symbol=INVALIDXYZ side=BUY type=MARKET qty=0.01 price=None stop=None
+2025-07-10T14:35:20 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'INVALIDXYZ', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1720622120337}
+2025-07-10T14:35:20 | DEBUG    | trading_bot.client | ← /fapi/v1/order  400  198ms
+2025-07-10T14:35:20 | ERROR    | trading_bot.client | API error response: {'code': -1121, 'msg': 'Invalid symbol.'}
+2025-07-10T14:35:20 | ERROR    | trading_bot.orders | API error placing order: code=-1121 msg=Invalid symbol.
+2026-03-20T08:11:57 | INFO     | trading_bot | Logging initialised — file: /home/claude/trading_bot/logs/trading_bot.log
+2026-03-20T08:11:58 | INFO     | trading_bot | Logging initialised — file: /home/claude/trading_bot/logs/trading_bot.log
+2026-03-20T08:12:02 | INFO     | trading_bot | Logging initialised — file: /home/claude/trading_bot/logs/trading_bot.log
+2026-03-20T08:12:02 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2026-03-20T08:18:55 | INFO     | trading_bot | Logging initialised — file: /home/claude/trading_bot/logs/trading_bot.log
+2026-03-20T08:18:55 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2026-03-20T08:18:55 | INFO     | trading_bot.orders | Dry-run mode; skipping API call for {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': Decimal('0.01'), 'price': None, 'stop_price': None}
+2026-03-20T08:19:16 | INFO     | trading_bot | Logging initialised — file: /home/claude/trading_bot/logs/trading_bot.log
+2026-03-20T08:19:16 | INFO     | trading_bot.cli | CLI place command: symbol=ETHUSDT side=SELL type=LIMIT qty=0.1 price=3200 stop=None
+2026-03-20T08:19:16 | INFO     | trading_bot.orders | Dry-run mode; skipping API call for {'symbol': 'ETHUSDT', 'side': 'SELL', 'order_type': 'LIMIT', 'quantity': Decimal('0.1'), 'price': Decimal('3200'), 'stop_price': None}
+2026-03-20T08:19:45 | INFO     | trading_bot | Logging initialised — file: /home/claude/trading_bot/logs/trading_bot.log
+2026-03-20T08:19:45 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=SELL type=STOP_MARKET qty=0.01 price=None stop=58000
+2026-03-20T08:19:45 | INFO     | trading_bot.orders | Dry-run mode; skipping API call for {'symbol': 'BTCUSDT', 'side': 'SELL', 'order_type': 'STOP_MARKET', 'quantity': Decimal('0.01'), 'price': None, 'stop_price': Decimal('58000')}
+2026-03-20T08:19:57 | INFO     | trading_bot | Logging initialised — file: /home/claude/trading_bot/logs/trading_bot.log
+2026-03-20T08:19:57 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=None stop=None
+2026-03-20T08:19:57 | ERROR    | trading_bot.orders | Validation failed: A price is required for LIMIT orders.
+2026-03-20T08:19:57 | INFO     | trading_bot | Logging initialised — file: /home/claude/trading_bot/logs/trading_bot.log
+2026-03-20T08:19:57 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=BUY type=MARKET qty=0 price=None stop=None
+2026-03-20T08:19:57 | ERROR    | trading_bot.orders | Validation failed: Quantity must be greater than zero.
+2026-03-20T08:19:58 | INFO     | trading_bot | Logging initialised — file: /home/claude/trading_bot/logs/trading_bot.log
+2026-03-20T08:19:58 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=SELL type=STOP_MARKET qty=0.01 price=None stop=None
+2026-03-20T08:19:58 | ERROR    | trading_bot.orders | Validation failed: A stop price is required for STOP_MARKET orders.
+2026-03-20T08:37:29 | INFO     | trading_bot | Logging initialised — file: /home/claude/trading_bot/logs/trading_bot.log
+2026-03-20T08:37:29 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2026-03-20T08:37:29 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2026-03-20T08:37:29 | INFO     | trading_bot.client | Placing order: MARKET BUY BTCUSDT qty=0.01 price=None
+2026-03-20T08:37:29 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1773995849523}
+2026-03-20T08:37:29 | ERROR    | trading_bot.client | Connection error: POST https://testnet.binancefuture.com/fapi/v1/order — HTTPSConnectionPool(host='testnet.binancefuture.com', port=443): Max retries exceeded with url: /fapi/v1/order (Caused by NameResolutionError("HTTPSConnection(host='testnet.binancefuture.com', port=443): Failed to resolve 'testnet.binancefuture.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-03-20T08:37:29 | ERROR    | trading_bot.orders | Network error placing order: Cannot connect to https://testnet.binancefuture.com
+2026-03-20T14:24:29 | INFO     | trading_bot | Logging initialised — file: c:\Users\Adi\Desktop\trading\trading\logs\trading_bot.log
+2026-03-20T14:24:29 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2026-03-20T14:24:29 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2026-03-20T14:24:29 | INFO     | trading_bot.client | Placing order: MARKET BUY BTCUSDT qty=0.01 price=None
+2026-03-20T14:24:29 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1773996869895}
+2026-03-20T14:24:30 | DEBUG    | trading_bot.client | ← /fapi/v1/order  400  416ms
+2026-03-20T14:24:30 | ERROR    | trading_bot.client | API error response: {'code': -1021, 'msg': "Timestamp for this request was 1000ms ahead of the server's time."}
+2026-03-20T14:24:30 | ERROR    | trading_bot.orders | API error placing order: code=-1021 msg=Timestamp for this request was 1000ms ahead of the server's time.
+2026-03-20T14:24:36 | INFO     | trading_bot | Logging initialised — file: c:\Users\Adi\Desktop\trading\trading\logs\trading_bot.log
+2026-03-20T14:24:36 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2026-03-20T14:24:36 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2026-03-20T14:24:36 | INFO     | trading_bot.client | Placing order: MARKET BUY BTCUSDT qty=0.01 price=None
+2026-03-20T14:24:36 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1773996876735}
+2026-03-20T14:24:37 | DEBUG    | trading_bot.client | ← /fapi/v1/order  400  368ms
+2026-03-20T14:24:37 | ERROR    | trading_bot.client | API error response: {'code': -1021, 'msg': "Timestamp for this request was 1000ms ahead of the server's time."}
+2026-03-20T14:24:37 | ERROR    | trading_bot.orders | API error placing order: code=-1021 msg=Timestamp for this request was 1000ms ahead of the server's time.
+2026-03-20T14:26:12 | INFO     | trading_bot | Logging initialised — file: c:\Users\Adi\Desktop\trading\trading\logs\trading_bot.log
+2026-03-20T14:26:12 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2026-03-20T14:26:13 | INFO     | trading_bot.client | Server time synced — offset: -5291ms
+2026-03-20T14:26:13 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2026-03-20T14:26:13 | INFO     | trading_bot.client | Placing order: MARKET BUY BTCUSDT qty=0.01 price=None
+2026-03-20T14:26:13 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1773996967980}
+2026-03-20T14:26:13 | DEBUG    | trading_bot.client | ← /fapi/v1/order  200  204ms
+2026-03-20T14:26:13 | DEBUG    | trading_bot.client | Response body: {'orderId': 12895081202, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'TdSvLeBo2evywvvjpORMIA', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1773996968151}
+2026-03-20T14:26:13 | INFO     | trading_bot.client | Order placed — orderId=12895081202 status=NEW
+2026-03-20T14:26:18 | INFO     | trading_bot | Logging initialised — file: c:\Users\Adi\Desktop\trading\trading\logs\trading_bot.log
+2026-03-20T14:26:18 | INFO     | trading_bot.cli | CLI place command: symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2026-03-20T14:26:19 | INFO     | trading_bot.client | Server time synced — offset: -5294ms
+2026-03-20T14:26:19 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2026-03-20T14:26:19 | INFO     | trading_bot.client | Placing order: MARKET BUY BTCUSDT qty=0.01 price=None
+2026-03-20T14:26:19 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1773996973833}
+2026-03-20T14:26:19 | DEBUG    | trading_bot.client | ← /fapi/v1/order  200  195ms
+2026-03-20T14:26:19 | DEBUG    | trading_bot.client | Response body: {'orderId': 12895082052, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'RcrGkcRMQGehv0ZBTLladO', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1773996973999}
+2026-03-20T14:26:19 | INFO     | trading_bot.client | Order placed — orderId=12895082052 status=NEW
