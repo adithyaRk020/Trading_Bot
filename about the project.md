@@ -1,0 +1,4 @@
+Binance Futures Testnet Trading Bot
+A lightweight Python CLI application for placing and managing orders on the Binance USDT-M Futures Testnet. Built with a clean layered architecture separating the HTTP client, order logic, input validation, and CLI interface.
+Supports Market, Limit, and Stop-Market orders on any futures symbol, with full BUY/SELL coverage. All API requests are HMAC-SHA256 signed and timestamped with automatic server clock synchronisation to prevent drift errors. Input is validated before any network call is made, with clear error messages for invalid parameters.
+Structured logging writes a full request/response audit trail to a rotating log file while keeping the console output clean and operator-friendly. Credentials are loaded from a .env file, keeping secrets out of source code. A --dry-run flag lets you preview and validate any order without it being sent to the exchange.
